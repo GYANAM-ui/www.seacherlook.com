@@ -1,0 +1,75 @@
+<!-- We creating a video chat web page here -->
+<html lang="en">
+
+<head>
+    <title>Searcherlook Face Chat</title>
+    <!-- link for title icon -->
+    <link rel="icon" type="x-icon/images" href="../images/searcherlook.png" sizes="16x16">
+
+    <!-- Bootstrap Links here -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+
+    <!-- Scaledrone srcipt -->
+    <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+
+    <!-- Firebase Links -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <!-- link css file -->
+    <link rel="stylesheet" type="text/css" href="../styles/videoChat.css">
+</head>
+
+<body>
+    <h3 class="btn btn-default heading">
+        <img src="../images/searcherlook.png" /> Face Chat
+    </h3>
+
+    <!-- Scrool Up -->
+    <div class="btn btn-info scrol" onclick="goTop();"><i class="fa fa-arrow-up"></i></div>
+
+    <!-- Leave meeting -->
+    <div class="btn btn-default logout" onclick="logout();"><i class="fa fa-sign-out"></i> Leave</div>
+
+    <!-- Adding div tags for playing live video -->
+    <div style="float: left;margin-left: 10px;" class="col-md-4 col-sm-12 col-xs-12">
+        <video id="localVideo" autoplay muted allow="microphone;camera"></video>
+    </div>
+
+    <div style="float: right;margin-left: -10px;" class="col-md-4 col-sm-12 col-xs-12">
+        <video id="remoteVideo" autoplay allow="microphone;camera"></video>
+    </div>
+
+    <!-- Adding live chat on there -->
+    <center>
+        <p>SL-code: <span id="code"></span></p>
+        <p>Live chat room name: <span id="roomName"></span></p>
+        <P>Session link: <span style="font-size: 10px;" id="link"></span></P>
+        <div id="output" style="text-align: left;margin-bottom: 70px;"> No chats are there, Type your first message </div>
+    </center>
+
+    <center>
+        <div class="input_div_message_page">
+            <input type="text" id="msg" class="form-control" placeholder="Message">
+            <button onclick="send()" class="btn btn-success">Send</button>
+            <br>
+        </div>
+    </center>
+
+    <script type="text/javascript" src="../scripts/server.js"></script>
+    <!-- Connect new JavaScript for chatting -->
+    <script type="text/javascript" src="../scripts/v-chat-message.js"></script>
+</body>
+
+</html>

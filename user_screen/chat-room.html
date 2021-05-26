@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <title>Searcherlook Room</title>
+    <link rel="icon" type="x-icon/images" href="../images/searcherlook.png" sizes="16x16">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Firebase Links -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <!-- link css in html -->
+    <link rel="stylesheet" href="../styles/chat-room.css">
+</head>
+
+<body>
+    <h3 class="btn btn-default heading">
+        <img src="../images/searcherlook.png"> Chat Room<br>
+        <span id="room">Empty</span>
+    </h3>
+
+    <center>
+        <button class="btn btn-default logout" onclick="back();"><i class="fa fa-sign-out">&nbsp;</i>Back</button>
+        <div id="output" style="text-align: left;margin-bottom: 70px;"> No chats are available </div>
+    </center>
+
+    <center>
+        <div class="input_div_message_page">
+            <input type="text" id="msg" class="form-control" placeholder="Message">
+            <button onclick="send()" class="btn btn-success">Send</button>
+        </div>
+    </center>
+
+    <script type="text/javascript" src="../scripts/chat-room.js"></script>
+</body>
+
+</html>

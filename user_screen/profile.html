@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <title>Searcherlook Room</title>
+    <link rel="icon" type="x-icon/images" href="../images/searcherlook.png" sizes="16x16">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Firebase Links -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <!-- link css in html -->
+    <link rel="stylesheet" href="../styles/profile.css">
+</head>
+
+<body>
+    <h3 class="btn btn-default heading">
+        <img src="../images/searcherlook.png"> Searcherlook Profile of <span id="name"></span>
+        <img src="../images/searcherlook.png">
+    </h3>
+
+    <!-- Display profile on right side -->
+    <div class="profile">
+        <center>
+            <img src="/images/searcherlook.png">
+            <h3 class="text-info"><b>Profile</b></h3>
+            <hr>
+            <img src="/images/avatar.png" class="user_img" />
+            <div class="left-display">
+                <h4>Name: <span id="user_name"></span></h4>
+                <h4>Username: <span id="given_name"></span></h4>
+                <div hidden id="user-pic"></div>
+                <div hidden id="user-name"></div>
+            </div>
+            <br><br>
+            <button onclick="logout();" class="btn btn-default logout"><i class="fa fa-sign-out">&nbsp;</i> Logout</button>
+            <hr>
+            <p>It says that a verified badge means “that Searcherlook has confirmed that this is the authentic account for the public figure, celebrity or global brand it represents.” “To request a verified badge, you must be a public figure, celebrity or
+                brand and meet certain account and eligibility requirements. <br> <b>But now is free for all</b></p>
+        </center>
+    </div>
+
+    <script type="text/javascript" src="../scripts/profile.js"></script>
+</body>
+
+</html>

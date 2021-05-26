@@ -1,0 +1,103 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.heading {
+    color: blue;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 22px;
+    width: 100%;
+    margin-top: -5px;
+    cursor: default;
+}
+
+#localVideo,
+#remoteVideo {
+    width: 350px;
+    height: 350px;
+    background: rgb(197, 197, 197);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 0;
+    position: fixed;
+}
+
+#output {
+    padding: 10px;
+    width: 30%;
+    background: rgba(224, 224, 224, 0.8);
+    border-radius: 15px;
+}
+
+#room {
+    font-size: 18px;
+    color: black;
+}
+
+.logout {
+    width: 150px;
+    height: 50px;
+    color: rgb(255, 0, 0);
+    border-radius: 20px;
+    bottom: 100px;
+    left: 15;
+    position: fixed;
+    text-align: center;
+    padding: 10px;
+}
+
+.logout:hover {
+    width: 150px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 15, 15);
+    border-radius: 20px;
+    bottom: 100px;
+    left: 15;
+    position: fixed;
+    text-align: center;
+    padding: 10px;
+}
+
+.input_div_message_page {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.input_div_message_page label {
+    color: black;
+}
+
+.input_div_message_page #msg {
+    width: 50%;
+    border-radius: 30px;
+}
+
+.input_div_message_page button {
+    margin-top: 15px;
+}
+
+.user_tick {
+    width: 30px;
+}
+
+.message_h4 {
+    padding-left: 5px;
+    color: grey;
+}
+
+.scrol {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    bottom: 100px;
+    right: 15;
+    position: fixed;
+    text-align: center;
+    padding: 10px;
+}
